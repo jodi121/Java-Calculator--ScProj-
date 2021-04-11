@@ -1,4 +1,4 @@
 # Java Calculator (ScProj)
-**Language used**: Java
+**Language used**: *Java*
 **Status: Expiremental**
  
