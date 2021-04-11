@@ -20,9 +20,9 @@ import javax.swing.JLabel;
 public class Calculator {
 
 	/*
-	 * Ïñéóìüò ìåôáâëçôþí åñãáóßåò (õðÜñ÷ïõí ìåôáâëçôÝò ðåñéôôåò óôçí 
-	 * ëåéôïõñãéêïôçôá ôïõ ðñïãñÜììáôïò ðïõ ÷ñçóéìïðïéçèçêáí
-	 *  óôá áñ÷éêá óôáäéá.
+	 * ÎŸÏÎ¹ÏƒÎ¼ÏŒÏ‚ Î¼ÎµÏ„Î±Î²Î»Î·Ï„ÏŽÎ½ ÎµÏÎ³Î±ÏƒÎ¯ÎµÏ‚ (Ï…Ï€Î¬ÏÏ‡Î¿Ï…Î½ Î¼ÎµÏ„Î±Î²Î»Î·Ï„Î­Ï‚ Ï€ÎµÏÎ¹Ï„Ï„ÎµÏ‚ ÏƒÏ„Î·Î½ 
+	 * Î»ÎµÎ¹Ï„Î¿Ï…ÏÎ³Î¹ÎºÎ¿Ï„Î·Ï„Î± Ï„Î¿Ï… Ï€ÏÎ¿Î³ÏÎ¬Î¼Î¼Î±Ï„Î¿Ï‚ Ï€Î¿Ï… Ï‡ÏÎ·ÏƒÎ¹Î¼Î¿Ï€Î¿Î¹Î·Î¸Î·ÎºÎ±Î½
+	 *  ÏƒÏ„Î± Î±ÏÏ‡Î¹ÎºÎ± ÏƒÏ„Î±Î´Î¹Î±.
 	 */
 	private JFrame frame;
 	public static String OUTPUT_SHOWING_TEXT = "";
@@ -80,7 +80,7 @@ public class Calculator {
 		//TEST REGEX 
 		
 		/*
-		 * Ðåñéôôïò êùäéêáò äïêéìçò ìïôéâùí
+		 * Î ÎµÏÎ¹Ï„Ï„Î¿Ï‚ ÎºÏ‰Î´Î¹ÎºÎ±Ï‚ Î´Î¿ÎºÎ¹Î¼Î·Ï‚ Î¼Î¿Ï„Î¹Î²Ï‰Î½
 		 */
 		// System.out.println(matchesPattern("(([0-9]{0,})([+-]?)([0-9]{0,})){0,}", "4+3+2+4+5+"));
 	}
@@ -102,7 +102,7 @@ public class Calculator {
 			@Override
 			public void keyTyped(KeyEvent arg0) {
 				/*/
-				 * Ðåñéôôïò êùäéêáò óôçí ðñïóðáèåéá åíôáîçò ôïõ ðëçêôñïëïãéïõ óôï êïìðéïõôåñáêé
+				 * Î ÎµÏÎ¹Ï„Ï„Î¿Ï‚ ÎºÏ‰Î´Î¹ÎºÎ±Ï‚ ÏƒÏ„Î·Î½ Ï€ÏÎ¿ÏƒÏ€Î±Î¸ÎµÎ¹Î± ÎµÎ½Ï„Î±Î¾Î·Ï‚ Ï„Î¿Ï… Ï€Î»Î·ÎºÏ„ÏÎ¿Î»Î¿Î³Î¹Î¿Ï… ÏƒÏ„Î¿ ÎºÎ¿Î¼Ï€Î¹Î¿Ï…Ï„ÎµÏÎ±ÎºÎ¹
 				 */
 				if(arg0.getKeyCode() >= 48 && arg0.getKeyCode() <= 57)
 				{
@@ -484,7 +484,7 @@ public class Calculator {
 					lastOperator = "+";
 					
 				}else {
-					lblNewLabel.setText("ERROR - Áäõíáìßá åêôÝëåóçò åíôïëÞò");
+					lblNewLabel.setText("ERROR - Î‘Î´Ï…Î½Î±Î¼Î¯Î± ÎµÎºÏ„Î­Î»ÎµÏƒÎ·Ï‚ ÎµÎ½Ï„Î¿Î»Î®Ï‚");
 				}
 					
 			
@@ -510,7 +510,7 @@ public class Calculator {
 					lastOperator = "-";
 				
 				} else {
-					lblNewLabel.setText("ERROR - Áäõíáìßá åêôÝëåóçò åíôïëÞò");
+					lblNewLabel.setText("ERROR - Î‘Î´Ï…Î½Î±Î¼Î¯Î± ÎµÎºÏ„Î­Î»ÎµÏƒÎ·Ï‚ ÎµÎ½Ï„Î¿Î»Î®Ï‚");
 					}
 
 				textPane.setText(OUTPUT_SHOWING_TEXT);
@@ -530,7 +530,7 @@ public class Calculator {
 					lastOperator = "*";
 				
 				} else {
-					lblNewLabel.setText("ERROR - Áäõíáìßá åêôÝëåóçò åíôïëÞò");
+					lblNewLabel.setText("ERROR - Î‘Î´Ï…Î½Î±Î¼Î¯Î± ÎµÎºÏ„Î­Î»ÎµÏƒÎ·Ï‚ ÎµÎ½Ï„Î¿Î»Î®Ï‚");
 				}
 				
 				textPane.setText(OUTPUT_SHOWING_TEXT);
